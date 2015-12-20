@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>secret</title>
+
+		<style type="text/css">
+			.hide {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="hide" id="disconnected">
+			<input type="text" id="channel" placeholder="channel">
+			<input type="text" id="key" placeholder="key">
+			<input type="text" id="nickname" placeholder="nickname">
+
+			<button type="button" id="connect">connect</button>
+		</div>
+
+		<div class="hide" id="connected">
+			<input type="text" id="message">
+
+			<button type="button" id="send">send</button>
+
+			<div id="log"></div>
+		</div>
+
+		<script type="text/javascript" src="bundle.js"></script>
+	</body>
+</html>
